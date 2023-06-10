@@ -1,6 +1,6 @@
-# first_project
+# Flutter_Zealotry
 
-A new Flutter project.
+A new project to familiarise myself with Flutter. I will follow along with some online crash courses, and maybe try to translate the mobile app I had already developed using this SDK and Dart.
 
 ## Getting Started
 
