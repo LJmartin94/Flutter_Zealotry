@@ -8,10 +8,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        colorScheme: ColorScheme.light(primary: Color(0xFF757575)),
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: const Text("Zealotry Flutter"),
         ),
+        body: const Text(""),
       ),
     );
   }
