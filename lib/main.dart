@@ -8,11 +8,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Text(
-        "Hello World",
-        style: TextStyle(
-          fontSize: 30,
-          color: Colors.blue,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Zealotry Flutter"),
         ),
       ),
     );
