@@ -9,13 +9,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        colorScheme: ColorScheme.light(primary: Color(0xFF757575)),
+        colorScheme: ColorScheme.light(primary: Color(0xFF808080)),
       ),
       home: Scaffold(
         appBar: AppBar(
           title: const Text("Zealotry Flutter"),
         ),
-        body: const Text(""),
+        body: const Center(
+          child: Text("test"),
+        ),
       ),
     );
   }
