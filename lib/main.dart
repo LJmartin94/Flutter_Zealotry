@@ -8,18 +8,29 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final wordPair = WordPair.random();
     return MaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.light(primary: Color(0xFF808080)),
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Zealotry Flutter"),
-        ),
-        body: Center(
-          child: Text("${wordPair.first} ${wordPair.second}"),
-        ),
+      home: RandomWords(),
+    );
+  }
+}
+
+class RandomWords extends StatefulWidget {
+  @override
+  RandomWordsState createState() => RandomWordsState();
+}
+
+class RandomWordsState extends State<RandomWords> {
+  final wordPair = WordPair.random();
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Zealotry Flutter"),
+      ),
+      body: Center(
+        child: Text("${wordPair.first} ${wordPair.second}"),
       ),
     );
   }
