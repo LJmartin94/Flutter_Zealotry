@@ -24,6 +24,7 @@ class RandomWords extends StatefulWidget {
 
 class RandomWordsState extends State<RandomWords> {
   final wordPair = WordPair.random();
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
