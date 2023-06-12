@@ -52,7 +52,7 @@ class RandomWordsState extends State<RandomWords> {
       return Container(
         margin: const EdgeInsets.symmetric(vertical: 4),
         child: Ink(
-          color: Colors.grey[400],
+          color: Colors.grey[300],
           child: InkWell(
             splashColor: Colors.grey,
             splashFactory: InkRipple.splashFactory,
