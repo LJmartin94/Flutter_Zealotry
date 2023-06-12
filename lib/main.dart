@@ -51,11 +51,18 @@ class RandomWordsState extends State<RandomWords> {
     itemBuilder: (BuildContext context, int index) {
       return Container(
         margin: const EdgeInsets.symmetric(vertical: 4),
-        color: Colors.grey[400],
-        child: Center(
-          child: TextButton(
-            onPressed: null,
-            child: Text(morningButtons[index]),
+        child: Ink(
+          color: Colors.grey[400],
+          child: InkWell(
+            splashColor: Colors.grey,
+            splashFactory: InkRipple.splashFactory,
+            onTap: () {},
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Center(
+                child: Text(morningButtons[index]),
+              ),
+            ),
           ),
         ),
       );
