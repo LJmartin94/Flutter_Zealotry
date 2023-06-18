@@ -7,7 +7,9 @@ class MorningMenu extends StatefulWidget {
 }
 
 class MorningMenuState extends State<MorningMenu> {
-  final _randomWordPairs = <WordPair>[];
+  final List _randomWordPairs = <WordPair>[];
+  final Set _savedWordPairs = Set<String>();
+
   final List<String> _morningButtons = <String>[
     "Wake Up",
     "Get Up",
@@ -49,7 +51,9 @@ class MorningMenuState extends State<MorningMenu> {
   }
 
   Widget _buildRow(String content) {
-    return Container(
+    final bool alreadySaved = _savedWordPairs.contains(content);
+
+    return Card(
       margin: const EdgeInsets.symmetric(vertical: 4),
       child: Ink(
         color: Colors.grey[300],
